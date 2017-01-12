@@ -1,0 +1,21 @@
+<param-root name="jobpub">
+    <elements>
+        <field>
+        <name>number</name>
+        <type>Integer</type>
+            <min>18</min>
+            <max>19</max>
+            <range>0,1</range>
+        <ifNecessary>true</ifNecessary>
+        </field>
+        <field>
+            <name>mobile</name>
+            <type>String</type>
+            <reg>^1[3-9][0-9]\d{8}$</reg>
+            <isEmpty>false</isEmpty>
+            <isNull>false</isNull>
+            <ifNecessary>true</ifNecessary>
+        </field>
+    </elements>
+</param-root>
+
