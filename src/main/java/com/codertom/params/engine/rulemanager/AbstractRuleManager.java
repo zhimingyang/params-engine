@@ -23,11 +23,10 @@ public class AbstractRuleManager implements RuleManager {
 
     private static Logger logger = LoggerFactory.getLogger(AbstractRuleManager.class);
 
-    public void init() {
+    public AbstractRuleManager(){
         parser = new RuleParser();
         paramMap = new ConcurrentHashMap<String, ParamCheckChain>(100);
         String engineConfFilePath = ConfigUtil.getProperty(Constants.ENGINE_PATH);
-
     }
 
     public void load(EngineEvent event) {

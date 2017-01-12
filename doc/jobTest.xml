@@ -1,14 +1,13 @@
-<param-root name="jobpub">
+<root>
     <elements>
-        <field>
+        <field type="Integer">
         <name>number</name>
-        <type>Integer</type>
             <min>18</min>
             <max>19</max>
             <range>0,1</range>
         <ifNecessary>true</ifNecessary>
         </field>
-        <field>
+        <field type="String">
             <name>mobile</name>
             <type>String</type>
             <reg>^1[3-9][0-9]\d{8}$</reg>
@@ -16,6 +15,26 @@
             <isNull>false</isNull>
             <ifNecessary>true</ifNecessary>
         </field>
+        <field type="long">
+            <name>timestamp</name>
+            <min>18</min>
+            <max>19</max>
+            <range>0,1</range>
+            <ifNecessary>true</ifNecessary>
+        </field>
+        <field type="float">
+            <name>price</name>
+            <min>18.01</min>
+            <max>19.78</max>
+            <range>18.88,18.99</range>
+            <ifNecessary>true</ifNecessary>
+        </field>
+        <field type="double">
+            <name>price1</name>
+            <min>18.0123121312323</min>
+            <max>19.7823332323423</max>
+            <ifNecessary>true</ifNecessary>
+        </field>
     </elements>
-</param-root>
+</root>
 
