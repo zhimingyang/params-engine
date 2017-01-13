@@ -13,4 +13,5 @@ public interface ParamCheckChain {
      * @return
      */
     Map doCheck(Map info);
+
 }
