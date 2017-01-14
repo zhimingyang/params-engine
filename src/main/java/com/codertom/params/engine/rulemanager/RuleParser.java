@@ -28,6 +28,7 @@ public class RuleParser {
     public RuleParser(){
         typeMap = new HashMap<String,List<BasicType>>();
     }
+
     /**
      * 对配置中的所有文件进行解析
      * @param filePath
