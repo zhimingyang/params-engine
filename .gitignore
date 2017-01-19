@@ -17,7 +17,6 @@
 hs_err_pid*
 
 .gitignore
-
 .idea/vcs.xml
 .idea/compiler.xml
 .idea/encodings.xml
