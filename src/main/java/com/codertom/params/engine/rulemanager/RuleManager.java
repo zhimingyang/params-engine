@@ -8,6 +8,10 @@ import com.codertom.params.engine.event.EngineEvent;
 public interface RuleManager {
 
     /**
+     * 进行Manager的初始化
+     */
+    void init();
+    /**
      * 参数加载
      * @param event
      */

@@ -1,6 +1,5 @@
 package com.codertom.params.engine.common;
 
-import java.io.File;
 
 /**
  * 常量配置

@@ -29,7 +29,7 @@ public abstract class AbStractEngineRegistry implements EngineRegistry {
     private final ConcurrentMap<URL, Set<NotifyListener>> subscribed = new ConcurrentHashMap<URL, Set<NotifyListener>>();
 
     //保存URL到Path的映射，在构造的时候进行初始化
-    private final ConcurrentHashMap<URL,Path> PramPaths = new ConcurrentHashMap<URL,Path>();
+    public final ConcurrentHashMap<URL,Path> pramPaths = new ConcurrentHashMap<URL,Path>();
 
     public AbStractEngineRegistry(){
 
@@ -82,7 +82,7 @@ public abstract class AbStractEngineRegistry implements EngineRegistry {
         registered.add(url);
     }
 
-    void doRegiste(URL url){}
+    void doRegist(URL url){}
 
     @Override
     public void unregister(URL url) {
@@ -95,7 +95,7 @@ public abstract class AbStractEngineRegistry implements EngineRegistry {
         registered.remove(url);
     }
 
-    void doUnRegiste(URL url){}
+    void doUnRegist(URL url){}
 
     @Override
     public void subscribe(URL url, NotifyListener listener) {
