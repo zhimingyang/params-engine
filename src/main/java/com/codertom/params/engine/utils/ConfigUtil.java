@@ -22,6 +22,7 @@ public class ConfigUtil {
      * 获取整体的配置参数
      * @return
      */
+
     public static Properties getProperties(){
         if (PROPERTIES==null){
             synchronized (ConfigUtil.class){
@@ -83,7 +84,6 @@ public class ConfigUtil {
             }
         }
         return null;
-
         }
 
     /**

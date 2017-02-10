@@ -12,4 +12,7 @@ public interface NotifyListener {
      * @param urls
      */
     void notify(List<String> urls);
+
+
+
 }

@@ -11,7 +11,6 @@ import java.util.List;
  */
 public class LocalConf {
 
-
     private List<Path> paths;
 
     private String localPath;
